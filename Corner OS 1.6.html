@@ -1,0 +1,2169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Corner OS</title>
+<link rel="icon" type="image/x-icon" href="data:image/png;base64,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">
+<style>
+:root{--taskbar-height:40px;--titlebar-height:28px;--accent:#2b7; --t-h:36px}
+html,body{height:100%;margin:0;font-family:system-ui, "Segoe UI", Roboto, Arial, sans-serif;font-size:13px}
+/* Desktop & taskbar */
+#desktop{height:calc(100% - var(--taskbar-height));background:#000000;position:relative;overflow:hidden}
+#taskbar{height:var(--t-h);position:fixed;left:0;right:0;bottom:0;background:#222;display:flex;align-items:center;padding:2px 6px;gap:6px;z-index:999}
+#start-btn{width:84px;height:100%;background:#2b2b2b;color:#fff;border:0;padding:0 8px;display:flex;align-items:center;gap:8px;cursor:default;user-select:none}
+#start-btn:hover{background:#3b3b3b}
+#tray{margin-left:auto;display:flex;align-items:center;gap:10px;color:#ddd}
+
+/* Start menu */
+#start-menu{position:fixed;left:6px;bottom:var(--taskbar-height);width:235px;max-height:60vh;background:#000;border:1px solid #bbb;padding:8px;display:none;overflow:auto;z-index:9999}
+.app-grid{display:flex;flex-wrap:wrap;gap:6px}
+
+/* Icons & app icon */
+#icons{padding:10px;display:flex;flex-wrap:wrap;gap:12px}
+.app-icon{font-size:35px; width:72px;height:72px;background:rgba(45,45,45,0.7);border:1px solid #ccc;display:flex;align-items:center;justify-content:center;flex-direction:column;cursor:default;user-select:none}
+.app-icon:hover{background:rgba(50,50,50,0.9)}
+.app-icon .icon-label{color:rgb(255,255,255); font-size:11px;margin-top:6px;user-select:none;cursor:default}
+
+/* Window */
+.window{user-select:none;position:absolute;border:1px solid #666;background:#fff;min-width:180px;min-height:120px;box-sizing:border-box;display:flex;flex-direction:column;box-shadow:0 8px 18px rgba(0,0,0,0.25)}
+.titlebar{height:var(--titlebar-height);display:flex;align-items:center;justify-content:space-between;padding:0 8px;cursor:default;background:linear-gradient(#777777,#6c6c6c);border-bottom:1px solid #bbb;user-select:none}
+.title{color:#fff; user-select:none}
+
+
+.win-controls{display:flex;gap:6px;transition:.1s}
+
+.btn{color:#fff;width:27px;height:25px;border:0;background:transparent}
+.btn:hover{background:rgba(25,25,25,.2)}
+.btn:active{background:rgba(25,25,25,.3)}
+
+button{background:#fff; border-style:solid;border-color:#666}
+button:hover{border-color:#444}
+button:active{border-color:#222}
+
+.content{user-select:none;flex:1;overflow:auto;padding:8px}
+.hidden{display:none}
+.resize-handle{width:12px;height:12px;position:absolute;right:2px;bottom:2px;cursor:se-resize}
+
+/* task buttons */
+.task-btn{height:28px;padding:0 8px;background:#333;color:#fff;border:0;display:flex;align-items:center;gap:8px;user-select:none;cursor:default}
+.task-btn:hover{background:#3333}
+.task-btn.active{outline:2px solid #fff}
+
+/* files in explorer */
+.file{padding:6px;border:1px solid transparent;display:flex;align-items:center;gap:8px;cursor:default}
+.file:hover{background:#f6f6f6;border-color:#ddd}
+
+/* Explorer file selection and focus visuals */
+.file.selected {
+  background: #cce5ff;
+  border-color: #99c;
+}
+.file.selected:hover {
+  background: #bcdfff;
+}
+.file:focus-visible {
+  outline: 1px solid #66a;
+}
+
+
+/* drag highlight */
+.file.drag-target{outline:2px dashed var(--accent);background:#f0fff5}
+.up-drop-target{outline:2px dashed #ffb; background:#fffadf}
+
+/* context menu */
+.context-menu{position:fixed;background:#f1f1f1;border:1px solid #aaa;padding:4px 0;box-shadow:0 2px 6px rgba(0,0,0,.2);display:none;z-index:99999;min-width:160px}
+.context-menu button{display:block;width:100%;text-align:left;background:none;border:0;padding:6px 10px;cursor:default}
+.context-menu button:hover{background:#ddd}
+
+/* notepad menu & textarea */
+.menu-bar{height:28px;display:flex;align-items:center;gap:8px;padding:0 6px;border-bottom:1px solid #eee;background:#fafafa}
+.menu-dropdown{position:absolute;background:#fff;border:1px solid #ccc;padding:4px;display:none;z-index:100000}
+.menu-item{padding:6px 10px;cursor:pointer}
+.menu-item:hover{background:#eee}
+
+.terminal-out{background:#000;color:#0f0;padding:8px;height:calc(100% - 32px);overflow:auto;font-family:monospace;font-size:12px;white-space:pre-wrap}
+.terminal-in{width:100%;box-sizing:border-box;padding:6px;border:1px solid #ccc}
+
+/* dialog system */
+.os-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.35);display:flex;align-items:center;justify-content:center;z-index:20000}
+.os-modal{width:420px;max-width:92%;background:#fff;border:1px solid #888;box-shadow:0 16px 40px rgba(0,0,0,0.4);border-radius:6px;overflow:hidden;font-size:13px;user-select:none}
+.os-modal .titlebar{user-select=none;height:34px;background:linear-gradient(#777777,#6c6c6c);display:flex;align-items:center;justify-content:space-between;padding:4px 8px;border-bottom:1px solid #ccc;cursor:default}
+.os-modal .dlg-body{padding:12px;color:#111;user-select:none}
+.os-modal .dlg-footer{display:flex;gap:8px;justify-content:flex-end;padding:8px;border-top:1px solid #eee;background:#fafafa;user-select:none}
+.os-modal .dlg-input{width:100%;box-sizing:border-box;padding:8px;border:1px solid #ccc;border-radius:4px}
+
+/* utilities */
+input,textarea,button{font:inherit}
+textarea{font-family:inherit}
+pre{white-space:pre-wrap;margin:0}
+
+/* allow text selection for inputs / textareas only */
+input, textarea { user-select: text; }
+
+/* small responsive tweaks */
+@media (max-width:420px){
+  #start-menu{left:3px;right:3px;width:auto}
+}
+
+/* TOAST + NOTIFICATION CENTER */
+#toast-container {
+  position: fixed;
+  bottom: var(--taskbar-height);
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  z-index: 20000;
+}
+.toast {
+  background: #333;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  animation: toastIn 0.3s ease, toastOut 0.4s ease 4.5s forwards;
+  max-width: 260px;
+  font-size: 13px;
+  cursor: pointer;
+}
+@keyframes toastIn {
+  from {opacity:0;transform:translateY(15px)}
+  to {opacity:1;transform:translateY(0)}
+}
+@keyframes toastOut {
+  to {opacity:0;transform:translateY(20px)}
+}
+#notification-center {
+  color=#fff;
+  display:none;
+  position:fixed;
+  right:10px;
+  bottom:var(--taskbar-height);
+  width:300px;
+  max-height:50vh;
+  overflow:auto;
+  background:#333;
+  border:1px solid #aaa;
+  box-shadow:0 4px 14px rgba(0,0,0,0.3);
+  z-index:25000;
+  border-radius:6px;
+}
+#notification-center-header {
+  background:#333;
+  padding:6px;
+  font-weight:bold;
+  color:#fff;
+}
+.notification-entry {
+  color=#fff;
+  padding:6px 10px;
+  border-bottom:1px solid #ccc;
+}
+
+/* Snap preview overlay */
+#snap-preview {
+  position: absolute;
+  background: rgba(200, 200, 200,0.18);
+  border: 2px solid rgba(232, 232, 232,0.45);
+  box-sizing: border-box;
+  pointer-events: none;
+  display: none;
+  z-index: 99998;
+}
+
+/* ensure icons etc do not get selected on double click */
+.app-icon, .title, .task-btn, .icon-label { -webkit-user-select: none; -ms-user-select:none; user-select:none; }
+
+/* subtle focus outlines */
+.window:focus-within { box-shadow: 0 12px 26px rgba(0,0,0,0.32); }
+</style>
+</head>
+<body>
+  <div id="desktop" tabindex="0" aria-label="Desktop">
+    <div id="icons" style="padding:10px;display:flex;flex-wrap:wrap;gap:12px">
+      <div class="app-icon" data-app="explorer"><div>📁</div><div class="icon-label">Explorer</div></div>
+      <div class="app-icon" data-app="notepad"><div>📝</div><div class="icon-label">Notepad</div></div>
+	  <div class="app-icon" data-app="htmleditor"><div>🌐</div><div class="icon-label">HTML Editor</div></div>
+      <div class="app-icon" data-app="terminal"><div>💻</div><div class="icon-label">Terminal</div></div>
+      <div class="app-icon" data-app="settings"><div>⚙️</div><div class="icon-label">Settings</div></div>
+      <div class="app-icon" data-app="appcreator"><div>🧩</div><div class="icon-label">App Creator</div></div>
+    </div>
+  </div>
+
+  <div id="start-menu" role="menu" aria-label="Start menu">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+      <strong style="user-select:none; color:white" >Start</strong> <small style="user-select:none; color:white" id="clock-sm"></small>
+    </div>
+    <div class="app-grid">
+      <div class="app-icon" data-app="explorer"><div>📁</div><div class="icon-label">Explorer</div></div>
+      <div class="app-icon" data-app="notepad"><div>📝</div><div class="icon-label">Notepad</div></div>
+	  <div class="app-icon" data-app="htmleditor"><div>🌐</div><div class="icon-label">HTML Editor</div></div>
+      <div class="app-icon" data-app="terminal"><div>💻</div><div class="icon-label">Terminal</div></div>
+      <div class="app-icon" data-app="settings"><div>⚙️</div><div class="icon-label">Settings</div></div>
+      <div class="app-icon" data-app="about"><div>ℹ️</div><div class="icon-label">About</div></div>
+      <div class="app-icon" data-app="appcreator"><div>🧩</div><div class="icon-label">App Creator</div></div>
+    </div>
+  </div>
+
+  <div id="taskbar" role="toolbar" aria-label="Taskbar">
+    <button id="start-btn" aria-haspopup="true" aria-controls="start-menu">Start</button>
+    <div id="task-buttons" style="display:flex;gap:6px"></div>
+   <div id="tray" style="user-select:none" ><span id="clock">00:00</span></div>
+  </div>
+  
+  <!-- Toast + Notification center -->
+  <div id="toast-container"></div>
+  <div id="notification-center">
+    <div style="user-select:none" id="notification-center-header">Notifications</div>
+    <div id="notification-list"></div>
+  </div>
+
+  <!-- global context menu element (we'll reuse/per-app compose into it) -->
+  <div id="ctx" class="context-menu" aria-hidden="true"></div>
+
+<script>
+/* ---------------------------
+   Filesystem (rewritten + migration)
+   - persistent in localStorage under key 'corner-os-fs-v2'
+   - nodes: { type: 'dir'|'file', name, modified, content?, children? }
+   --------------------------- */
+   
+   /* ---------------------------
+   File type associations
+   --------------------------- */
+const FILE_ASSOC = {
+  '.txt':  'notepad',
+  '.log':  'notepad',
+  '.html': 'htmleditor',
+  '.htm':  'htmleditor',
+  '.js':   'htmleditor',
+  '.css':  'htmleditor',
+  '.md':   'notepad',
+  '.json': 'notepad',
+};
+
+function getAppForFile(name) {
+  const idx = name.lastIndexOf('.');
+  const ext = idx !== -1 ? name.slice(idx).toLowerCase() : '';
+  return FILE_ASSOC[ext] || 'notepad';
+}
+   
+const FS = (function(){
+  const KEY = 'corner-os-fs-v2';
+  // Load stored data or migrate old format
+  let raw = localStorage.getItem(KEY);
+  let data = raw ? JSON.parse(raw) : null;
+
+  // If no new-format data, attempt to read older key used in your original file
+  if(!data){
+    const oldKeyGuess = 'mini-os-fs-v4';
+    const oldRaw = localStorage.getItem(oldKeyGuess);
+    if(oldRaw){
+      try {
+        const old = JSON.parse(oldRaw);
+        // If old.root exists with children mapping, migrate
+      } catch(e){
+        console.warn('FS migration failed', e);
+      }
+    }
+  }
+
+  // If still empty, create initial structure
+  if(!data){
+    data = {
+      root: {
+        type: 'dir',
+        name: 'root',
+        modified: Date.now(),
+        children: {
+          'README.txt': { type:'file', name:'README.txt', modified: Date.now(), content: 'Welcome to Corner OS! This OS is in its alpha stages. This was updated on v1.3.' },
+          'Notes': { type:'dir', name:'Notes', modified: Date.now(), children: { 'hello.txt': { type:'file', name:'hello.txt', modified: Date.now(), content: 'Welcome to Corner!' } } },
+          'Apps': { type:'dir', name:'Apps', modified: Date.now(), children: {} }
+        }
+      }
+    };
+    save();
+  }
+
+  function save(){ localStorage.setItem(KEY, JSON.stringify(data)); }
+
+  function partsFrom(path){ return (path||'/').split('/').filter(Boolean); }
+
+  function resolveNode(path){
+    if(!path || path === '/') return data.root;
+    const parts = partsFrom(path);
+    let node = data.root;
+    for(const p of parts){
+      if(!node.children || !node.children[p]) return null;
+      node = node.children[p];
+    }
+    return node;
+  }
+
+  function resolveParent(path){
+    const parts = partsFrom(path);
+    if(parts.length === 0) return { parent: data.root, name: null };
+    const name = parts.pop();
+    let node = data.root;
+    for(const p of parts){
+      if(!node.children || !node.children[p]) return null;
+      node = node.children[p];
+    }
+    return { parent: node, name };
+  }
+
+  return {
+    readDir(path='/'){
+      const node = resolveNode(path);
+      if(!node || node.type !== 'dir') return null;
+      return Object.values(node.children).map(n => ({ name: n.name, type: n.type, modified: n.modified }));
+    },
+    readFile(path){
+      const node = resolveNode(path);
+      if(!node || node.type !== 'file') return null;
+      return node.content;
+    },
+    writeFile(path, content=''){
+      const parts = partsFrom(path);
+      if(parts.length === 0) return false;
+      let node = data.root;
+      for(let i=0;i<parts.length-1;i++){
+        const p = parts[i];
+        if(!node.children[p]) node.children[p] = { type:'dir', name:p, modified: Date.now(), children:{} };
+        node = node.children[p];
+      }
+      const fname = parts.at(-1);
+      node.children[fname] = { type:'file', name:fname, modified: Date.now(), content: String(content) };
+      data.root.modified = Date.now();
+      save();
+      return true;
+    },
+    mkdir(path){
+      const parts = partsFrom(path);
+      if(parts.length === 0) return false;
+      let node = data.root;
+      for(const p of parts){
+        if(!node.children[p]) node.children[p] = { type:'dir', name:p, modified: Date.now(), children:{} };
+        node = node.children[p];
+      }
+      data.root.modified = Date.now();
+      save();
+      return true;
+    },
+    exists(path){ return !!resolveNode(path); },
+    isDir(path){ const n = resolveNode(path); return !!n && n.type === 'dir'; },
+    rename(path, newName){
+      const rp = resolveParent(path);
+      if(!rp || !rp.parent) return false;
+      const { parent, name } = rp;
+      if(!parent.children[name]) return false;
+      // prevent collision
+      if(parent.children[newName]) return false;
+      const node = parent.children[name];
+      node.name = newName;
+      parent.children[newName] = node;
+      delete parent.children[name];
+	  node.modified = Date.now();
+	  parent.modified = Date.now();
+      parent.modified = Date.now();
+      save();
+      return true;
+    },
+    del(path, opts={recursive:false}){
+      const rp = resolveParent(path);
+      if(!rp || !rp.parent) return false;
+      const { parent, name } = rp;
+      const node = parent.children[name];
+      if(!node) return false;
+      if(node.type === 'dir' && Object.keys(node.children || {}).length > 0 && !opts.recursive) return false;
+      delete parent.children[name];
+      parent.modified = Date.now();
+      save();
+      return true;
+    },
+    dump(){ return data; },
+    reset(){ localStorage.removeItem(KEY); data = null; location.reload();},
+    download(path){
+      const node = resolveNode(path);
+      if(!node || node.type !== 'file') return false;
+      const blob = new Blob([node.content || ''], { type: 'text/plain;charset=utf-8' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = node.name || 'file.txt';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(a.href);
+      return true;
+    },
+    /* Move a node (file or folder) to a target directory path.
+       options:
+         - allowOverwrite: boolean (if true, overwrite existing with same name)
+       Returns: {ok:true, reason?:string}
+    */
+    move(srcPath, targetDirPath, options={allowOverwrite:false}){
+      // basic validation
+      const srcRp = resolveParent(srcPath);
+      if(!srcRp || !srcRp.parent) return { ok:false, reason:'source not found' };
+      const { parent: srcParent, name: srcName } = srcRp;
+      const node = srcParent.children[srcName];
+      if(!node) return { ok:false, reason:'source not found' };
+
+      const targetDir = resolveNode(targetDirPath);
+      if(!targetDir || targetDir.type !== 'dir') return { ok:false, reason:'target is not a directory' };
+
+      // prevent moving root or moving into same directory
+      // prevent moving a node into itself or its descendant
+      const srcFullParts = partsFrom(srcPath);
+      const targetParts = partsFrom(targetDirPath);
+
+      // If trying to move directory into its own descendant => reject
+      if(node.type === 'dir') {
+        // if targetParts starts with srcFullParts (i.e. target is inside src)
+        const isDescendant = targetParts.length >= srcFullParts.length &&
+          srcFullParts.every((p, i) => p === targetParts[i]);
+        if(isDescendant) return { ok:false, reason:'cannot move a directory into its own descendant' };
+      }
+
+      // handle name collision
+      if(targetDir.children && targetDir.children[srcName]){
+        if(!options.allowOverwrite) return { ok:false, reason:'exists' };
+        // delete existing
+        delete targetDir.children[srcName];
+      }
+
+      // perform move
+      // remove from source parent
+      delete srcParent.children[srcName];
+      // attach to target
+      if(!targetDir.children) targetDir.children = {};
+      targetDir.children[srcName] = node;
+      // update modified times
+      targetDir.modified = Date.now();
+      node.modified = Date.now();
+      save();
+      return { ok:true };
+    }
+  }
+})();
+
+/* ---------------------------
+   Desktop / Taskbar / Start
+   --------------------------- */
+const desktop = document.getElementById('desktop');
+const startBtn = document.getElementById('start-btn');
+const startMenu = document.getElementById('start-menu');
+const clock = document.getElementById('clock');
+const clockSm = document.getElementById('clock-sm');
+const taskButtons = document.getElementById('task-buttons');
+const ctx = document.getElementById('ctx');
+
+let z = 10;
+let winId = 0;
+const windows = new Map();
+const settings = JSON.parse(localStorage.getItem('os-settings') || JSON.stringify({clock24:true, bg:'#000000'}));
+desktop.style.background = settings.bg;
+
+function saveSettings(){ localStorage.setItem('os-settings', JSON.stringify(settings)); desktop.style.background = settings.bg; }
+
+function updateClock(){
+  const d = new Date();
+  const s = settings.clock24 ? d.toLocaleTimeString() : d.toLocaleTimeString('en-US', {hour12: !settings.clock24});
+  clock.textContent = s; clockSm.textContent = s;
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+startBtn.addEventListener('click', (ev) => { ev.stopPropagation(); startMenu.style.display = startMenu.style.display==='block' ? 'none' : 'block'; });
+document.addEventListener('click', e => { if(!startMenu.contains(e.target) && !startBtn.contains(e.target)) startMenu.style.display='none'; });
+
+/* Prevent native context menu globally so Chrome doesn't show it.
+   We'll provide our own custom menus for desktop, windows, inputs, etc.
+   We still allow text input actions via our own menu (Cut/Copy/Paste).
+*/
+document.addEventListener('contextmenu', e => {
+  if (e.target.closest('input, textarea')) return;
+  e.preventDefault();
+});
+
+
+/* Small helper to stop text selection on double click for non-text elements */
+document.addEventListener('mousedown', e => {
+  const tag = e.target.tagName;
+  if(tag === 'DIV' || tag === 'SPAN' || tag === 'BUTTON' || tag === 'IMG') {
+    // don't prevent on inputs / textarea
+    if(!(e.target.closest('input') || e.target.closest('textarea'))) {
+      // allow dragging with primary mouse but prevent selecting text
+      e.preventDefault();
+    }
+  }
+});
+
+/* Helper: show context menu items: items = [{label, action, enabled}] */
+function showMenuFor(items, x, y){
+  ctx.innerHTML = '';
+  items.forEach(it=>{
+    const b = document.createElement('button');
+    b.textContent = it.label;
+    if(it.disabled) b.disabled = true;
+    b.addEventListener('click', (ev)=>{ ev.stopPropagation(); hideMenu(); it.action && it.action(); });
+    ctx.appendChild(b);
+  });
+  // place inside viewport
+  const rectW = 220;
+  const rectH = items.length*34 + 8;
+  const maxX = window.innerWidth - rectW - 8;
+  const maxY = window.innerHeight - rectH - 8;
+  ctx.style.left = Math.min(x, Math.max(8, maxX)) + 'px';
+  ctx.style.top = Math.min(y, Math.max(8, maxY)) + 'px';
+  ctx.style.display = 'block';
+  ctx.setAttribute('aria-hidden', 'false');
+}
+function hideMenu(){ ctx.style.display = 'none'; ctx.setAttribute('aria-hidden', 'true'); }
+
+document.addEventListener('click', ()=> hideMenu());
+
+/* Desktop context menu */
+desktop.addEventListener('contextmenu', e=>{
+  e.preventDefault();
+  // if clicked inside a window, ignore here; window will handle
+  if(e.target.closest('.window')) return;
+  showMenuFor([
+    {label:'New File', action: ()=>{ FS.writeFile('/newfile.txt',''); osNotify('Created /newfile.txt'); }},
+    {label:'New Folder', action: ()=>{ FS.mkdir('/NewFolder'); osNotify('Created /NewFolder'); }},
+    {label:'Refresh', action: ()=> location.reload() },
+    {label:'Settings', action: ()=> openApp('settings') }
+  ], e.clientX, e.clientY);
+});
+
+/* Taskbar background right-click menu (for empty space) */
+const taskbar = document.getElementById('taskbar');
+taskbar.addEventListener('contextmenu', e => {
+  // skip if user right-clicked a task button (they have their own menu)
+  if (e.target.closest('.task-btn')) return;
+  e.preventDefault();
+  e.stopPropagation();
+  showMenuFor([
+    { label: 'Show Desktop', action: () => {
+        windows.forEach(w => w.el.classList.add('hidden'));
+        document.querySelectorAll('.task-btn').forEach(b => b.classList.remove('active'));
+      }},
+    { label: 'Settings', action: () => openApp('settings') }
+  ], e.clientX, e.clientY);
+});
+
+
+/* Start menu + icons launching */
+function setupAppIcon(el){
+  // ensure only added once
+  if(el.__setup_done) return; el.__setup_done = true;
+  el.addEventListener('dblclick', (ev)=> { ev.stopPropagation(); openApp(el.dataset.app); });
+  el.addEventListener('click', (ev)=> { ev.stopPropagation(); if(startMenu.contains(el)){ openApp(el.dataset.app); startMenu.style.display='none'; }});
+}
+
+document.querySelectorAll('[data-app]').forEach(setupAppIcon);
+
+/* ---------- Dialog helpers ---------- */
+function osAlert(msg,title='Alert'){return createOSModal({title,body:String(msg),type:'alert'})}
+function osConfirm(msg,title='Confirm'){return createOSModal({title,body:String(msg),type:'confirm'})}
+function osPrompt(msg,def='',title='Prompt'){return createOSModal({title,body:String(msg),type:'prompt',defaultValue:def})}
+
+/* ---------- TOAST + NOTIFICATION CENTER ---------- */
+function osToast(message,duration=5000){
+  const container=document.getElementById('toast-container');
+  const toast=document.createElement('div');
+  toast.className='toast';
+  toast.textContent=message;
+  toast.addEventListener('click',()=>toast.remove());
+  container.appendChild(toast);
+  setTimeout(()=>toast.remove(),duration);
+}
+
+const notifCenter=document.getElementById('notification-center');
+const notifList=document.getElementById('notification-list');
+const MAX_NOTIFS=20;
+
+function osNotify(message){
+  osToast(message);
+  const entry=document.createElement('div');
+  entry.style="user-select:none; color:white";
+  entry.className='notification-entry';
+  entry.textContent=message;
+  notifList.prepend(entry);
+  while(notifList.children.length>MAX_NOTIFS){
+    notifList.removeChild(notifList.lastChild);
+  }
+}
+
+clock.addEventListener('click',e=>{
+  e.stopPropagation();
+  notifCenter.style.display=notifCenter.style.display==='block'?'none':'block';
+});
+
+document.addEventListener('click', e => { 
+if(!notifCenter.contains(e.target))
+	notifCenter.style.display='none';
+});
+
+/* Task button creation */
+function createTaskButton(id, title){
+  const b = document.createElement('button');
+  b.className = 'task-btn';
+  b.textContent = title;
+  b.dataset.win = id;
+
+  b.addEventListener('click', ev => {
+    ev.stopPropagation();
+    const w = windows.get(id);
+    if(!w) return;
+
+    const isHidden = w.el.classList.contains('hidden');
+    if (isHidden) {
+      // Show and bring to front
+      w.el.classList.remove('hidden');
+      bringToFront(w.el);
+      b.classList.add('active');
+    } else {
+      // If currently focused, hide; otherwise bring to front
+      const currentTop = parseInt(w.el.style.zIndex || 0);
+      const maxZ = Math.max(...[...document.querySelectorAll('.window')].map(el => parseInt(el.style.zIndex || 0)));
+      if (currentTop === maxZ) {
+        w.el.classList.add('hidden');
+        b.classList.remove('active');
+      } else {
+        bringToFront(w.el);
+        b.classList.add('active');
+      }
+    }
+  });
+  
+  b.addEventListener('contextmenu', e => {
+    e.preventDefault();
+    e.stopPropagation();
+    const w = windows.get(id);
+    if(!w) return;
+
+    const isHidden = w.el.classList.contains('hidden');
+    showMenuFor([
+      { label: isHidden ? 'Restore' : 'Minimize', action: () => {
+          if(isHidden){
+            w.el.classList.remove('hidden');
+            bringToFront(w.el);
+            b.classList.add('active');
+          } else {
+            w.el.classList.add('hidden');
+            b.classList.remove('active');
+          }
+        }},
+      { label: 'Bring to Front', action: () => bringToFront(w.el) },
+      { label: 'Close', action: () => {
+          w.el.remove();
+          b.remove();
+          windows.delete(id);
+        }}
+    ], e.clientX, e.clientY);
+  });
+
+  taskButtons.appendChild(b);
+  return b;
+}
+
+
+/* ---------------------------
+   Window creation / behaviors
+   - support per-window contextMenu (function)
+   --------------------------- */
+function createWindow({title='Window', width=360, height=240, x, y, content, contextMenu}){
+  const id = 'win-'+(++winId);
+  if(x==null || y==null){ x = Math.max(8, (desktop.clientWidth - width)/2); y = Math.max(8, (desktop.clientHeight - height)/2); }
+  const el = document.createElement('div'); el.className = 'window'; el.dataset.id = id;
+  Object.assign(el.style, {width: width+'px', height: height+'px', left: x+'px', top: y+'px', zIndex: ++z});
+
+  // titlebar
+  const titlebar = document.createElement('div'); titlebar.className='titlebar';
+  const titleEl = document.createElement('div'); titleEl.className='title'; titleEl.textContent = title;
+  const controls = document.createElement('div'); controls.className='win-controls';
+  const mkBtn = (t)=>{ const b=document.createElement('button'); b.className='btn'; b.textContent = t; return b; };
+  const btnMin = mkBtn('—'), btnMax = mkBtn('▢'), btnClose = mkBtn('✕');
+  controls.append(btnMin, btnMax, btnClose);
+  titlebar.append(titleEl, controls);
+
+  // content wrapper
+  const contentWrap = document.createElement('div'); contentWrap.className = 'content';
+  if(typeof content === 'string') contentWrap.innerHTML = content;
+  else if(content instanceof Node) contentWrap.appendChild(content);
+
+  const resizeHandle = document.createElement('div'); resizeHandle.className = 'resize-handle';
+
+  el.appendChild(titlebar); el.appendChild(contentWrap); el.appendChild(resizeHandle);
+  desktop.appendChild(el);
+
+  // behaviors
+  makeDraggable(el, titlebar);
+  makeResizable(el, resizeHandle);
+
+  const taskBtn = createTaskButton(id, title);
+  windows.set(id, {el, titleEl, contentWrap, taskBtn, contextMenu});
+
+  // click focus
+  el.addEventListener('mousedown', (ev)=> { ev.stopPropagation(); bringToFront(el); });
+
+  // controls
+  btnClose.addEventListener('click', ()=> { el.remove(); windows.delete(id); taskBtn.remove(); });
+  btnMin.addEventListener('click', ()=> { el.classList.add('hidden'); taskBtn.classList.remove('active'); });
+  let maximized = false, prev = {};
+btnMax.addEventListener('click', () => {
+  // ensure API exists (defensive)
+  const api = el._winApi;
+  if (!api) {
+    // fallback to old behavior if API missing
+    // (this should not happen if makeDraggable has run)
+    console.warn('Window API not found for maximize; falling back.');
+    // legacy fallback (mimics old prev/maximized) — optional, but keep for safety:
+    // NOTE: if you had a legacy 'maximized' and 'prev' in this outer scope, keep that logic.
+    return;
+  }
+
+  // If currently maximized -> restore
+  if (api.windowState.mode === 'maximized') {
+    api.applyRestoreState();
+    api.windowState.mode = 'normal';
+    bringToFront(el);
+    return;
+  }
+
+  // If snapped -> restore first (so maximize behaves predictably)
+  if (api.windowState.mode === 'snapped-left' || api.windowState.mode === 'snapped-right') {
+    api.applyRestoreState();
+    api.windowState.mode = 'normal';
+  }
+
+  // Now maximize
+  api.maximize();
+  bringToFront(el);
+});
+
+
+  // per-window context menu: if the window exposes a function, call it and show its returned menu
+  el.addEventListener('contextmenu', e=>{
+    e.preventDefault();
+    e.stopPropagation();
+    hideMenu(); // hide global if any
+    if(typeof contextMenu === 'function'){
+      // contextMenu should return items: [{label, action, disabled}]
+      const items = contextMenu(e, {el, titleEl, contentWrap, id});
+      if(items && items.length) showMenuFor(items, e.clientX, e.clientY);
+    } else {
+      // default window menu
+      showMenuFor([
+        {label:'Minimize', action: ()=> btnMin.click()},
+        {label: maximized ? 'Restore' : 'Maximize', action: ()=> btnMax.click()},
+        {label: 'Close', action: ()=> btnClose.click()}
+      ], e.clientX, e.clientY);
+    }
+  });
+
+  bringToFront(el);
+  return {id, el, titleEl, contentWrap, taskBtn};
+}
+
+function bringToFront(el){
+  el.style.zIndex = ++z;
+  document.querySelectorAll('.task-btn').forEach(b => b.classList.toggle('active', b.dataset.win === el.dataset.id));
+}
+
+function makeDraggable(el, handle) {
+  let dragging = false;
+  let sx = 0, sy = 0;         // drag start mouse coords
+  let ox = 0, oy = 0;         // original window coords
+
+  // Unified window state
+  let windowState = {
+    mode: "normal",           // "normal" | "maximized" | "snapped-left" | "snapped-right"
+    restore: null             // last non-maximized size/pos
+  };
+
+  // Snap preview
+  let snapPreview = document.getElementById("snap-preview");
+  if (!snapPreview) {
+    snapPreview = document.createElement("div");
+    snapPreview.id = "snap-preview";
+    desktop.appendChild(snapPreview);
+  }
+
+  let pendingSnap = null; // "left" | "right" | "maximize" | null
+
+  function saveRestoreState() {
+    windowState.restore = {
+      left: el.offsetLeft,
+      top: el.offsetTop,
+      width: el.offsetWidth,
+      height: el.offsetHeight
+    };
+  }
+
+  function applyRestoreState() {
+    if (!windowState.restore) return;
+    const r = windowState.restore;
+    el.style.left = r.left + "px";
+    el.style.top = r.top + "px";
+    el.style.width = r.width + "px";
+    el.style.height = r.height + "px";
+  }
+
+  function maximize() {
+    saveRestoreState();
+    windowState.mode = "maximized";
+    el.style.left = "0px";
+    el.style.top = "0px";
+    el.style.width = desktop.clientWidth + "px";
+    el.style.height = desktop.clientHeight + "px";
+    bringToFront(el);
+  }
+
+  function snapLeft() {
+    saveRestoreState();
+    windowState.mode = "snapped-left";
+    el.style.left = "0px";
+    el.style.top = "0px";
+    el.style.width = Math.floor(desktop.clientWidth / 2) + "px";
+    el.style.height = desktop.clientHeight + "px";
+    bringToFront(el);
+  }
+
+  function snapRight() {
+    saveRestoreState();
+    windowState.mode = "snapped-right";
+    el.style.top = "0px";
+    el.style.left = Math.floor(desktop.clientWidth / 2) + "px";
+    el.style.width = Math.floor(desktop.clientWidth / 2) + "px";
+    el.style.height = desktop.clientHeight + "px";
+    bringToFront(el);
+  }
+
+  function exitSnapOrMaximize() {
+    if (windowState.mode !== "normal") {
+      applyRestoreState();
+      windowState.mode = "normal";
+    }
+  }
+
+  // Expose a small API for external handlers (maximize button, titlebar dblclick, etc)
+  // This avoids scope issues and keeps state encapsulated.
+  el._winApi = {
+    get windowState() { return windowState; }, // read-only exposure
+    maximize,
+    snapLeft,
+    snapRight,
+    applyRestoreState,
+    exitSnapOrMaximize,
+    saveRestoreState
+  };
+
+  // ----------------------------
+  // DRAG START
+  // ----------------------------
+  handle.addEventListener("mousedown", (e) => {
+    if (e.button !== 0) return;
+
+    // Avoid dragging via maximize/min/close buttons
+    if (e.target.closest('.win-controls')) return;
+
+    dragging = true;
+    sx = e.clientX;
+    sy = e.clientY;
+
+    // Restore from snapped/maximized state immediately on drag
+    if (windowState.mode !== "normal") {
+      applyRestoreState();
+      windowState.mode = "normal";
+    }
+
+    ox = el.offsetLeft;
+    oy = el.offsetTop;
+
+    bringToFront(el);
+    e.preventDefault();
+  });
+
+  // ----------------------------
+  // DRAG MOVE — window collision drives snapping
+  // ----------------------------
+  window.addEventListener("mousemove", (e) => {
+    if (!dragging) return;
+
+    const dx = e.clientX - sx;
+    const dy = e.clientY - sy;
+
+    let newLeft = ox + dx;
+    let newTop = oy + dy;
+
+    // Clamp window within desktop
+    newLeft = Math.max(0, Math.min(newLeft, desktop.clientWidth - el.offsetWidth));
+    newTop = Math.max(0, Math.min(newTop, desktop.clientHeight - el.offsetHeight));
+
+    el.style.left = newLeft + "px";
+    el.style.top = newTop + "px";
+
+    // Edge collision detection
+    const touchingTop = newTop <= 0;
+    const touchingLeft = newLeft <= 0;
+    const touchingRight = newLeft + el.offsetWidth >= desktop.clientWidth;
+
+    snapPreview.style.display = "none";
+    pendingSnap = null;
+
+    if (touchingTop) {
+      snapPreview.style.left = "0px";
+      snapPreview.style.top = "0px";
+      snapPreview.style.width = desktop.clientWidth + "px";
+      snapPreview.style.height = desktop.clientHeight + "px";
+      snapPreview.style.display = "block";
+      pendingSnap = "maximize";
+    } 
+    else if (touchingLeft) {
+      snapPreview.style.left = "0px";
+      snapPreview.style.top = "0px";
+      snapPreview.style.width = Math.floor(desktop.clientWidth / 2) + "px";
+      snapPreview.style.height = desktop.clientHeight + "px";
+      snapPreview.style.display = "block";
+      pendingSnap = "left";
+    } 
+    else if (touchingRight) {
+      snapPreview.style.left = Math.floor(desktop.clientWidth / 2) + "px";
+      snapPreview.style.top = "0px";
+      snapPreview.style.width = Math.floor(desktop.clientWidth / 2) + "px";
+      snapPreview.style.height = desktop.clientHeight + "px";
+      snapPreview.style.display = "block";
+      pendingSnap = "right";
+    }
+  });
+
+  // ----------------------------
+  // DRAG END — apply snap
+  // ----------------------------
+  window.addEventListener("mouseup", () => {
+    if (!dragging) return;
+    dragging = false;
+
+    snapPreview.style.display = "none";
+
+    if (!pendingSnap) return;
+
+    saveRestoreState();
+
+    if (pendingSnap === "maximize") maximize();
+    else if (pendingSnap === "left") snapLeft();
+    else if (pendingSnap === "right") snapRight();
+
+    pendingSnap = null;
+    bringToFront(el);
+  });
+}
+
+
+function makeResizable(el, handle){
+  let resizing = false, sx = 0, sy = 0, sw = 0, sh = 0;
+
+  handle.addEventListener('mousedown', e => {
+    if (e.button !== 0) return;
+    resizing = true;
+    sx = e.clientX;
+    sy = e.clientY;
+    sw = el.offsetWidth;
+    sh = el.offsetHeight;
+    bringToFront(el);
+    e.preventDefault();
+  });
+
+  window.addEventListener('mousemove', e => {
+    if (!resizing) return;
+
+    const dx = e.clientX - sx;
+    const dy = e.clientY - sy;
+
+    el.style.width = Math.max(180, sw + dx) + "px";
+    el.style.height = Math.max(120, sh + dy) + "px";
+  });
+
+  window.addEventListener("mouseup", () => {
+    resizing = false;
+  });
+}
+
+/* ---------------------------
+   Reusable OS Dialog System (classic window style modals)
+   - osAlert(message, title)
+   - osConfirm(message, title) -> Promise<boolean>
+   - osPrompt(message, defaultValue, title) -> Promise<string|null>
+   --------------------------- */
+function createOSModal({title='Dialog', body='', type='alert', defaultValue=''}){
+  return new Promise((resolve) => {
+    // overlay
+    const overlay = document.createElement('div');
+    overlay.className = 'os-modal-overlay';
+
+    // modal
+    const modal = document.createElement('div');
+    modal.className = 'os-modal';
+
+    // titlebar
+    const titlebar = document.createElement('div');
+    titlebar.className = 'titlebar';
+    const titleEl = document.createElement('div'); titleEl.className = 'title'; titleEl.textContent = title;
+    const controls = document.createElement('div'); controls.className = 'win-controls';
+    const closeBtn = document.createElement('button'); closeBtn.className = 'btn'; closeBtn.textContent = '✕';
+    controls.appendChild(closeBtn);
+    titlebar.appendChild(titleEl); titlebar.appendChild(controls);
+
+    // body
+    const bodyEl = document.createElement('div'); bodyEl.className = 'dlg-body';
+    if(typeof body === 'string') bodyEl.innerHTML = `<div style="margin-bottom:8px;">${body}</div>`;
+    else if(body instanceof Node) bodyEl.appendChild(body);
+
+    // maybe input
+    let inputEl = null;
+    if(type === 'prompt'){
+      inputEl = document.createElement('input');
+      inputEl.type = 'text';
+      inputEl.className = 'dlg-input';
+      inputEl.value = defaultValue || '';
+      bodyEl.appendChild(inputEl);
+    }
+
+    // footer
+    const footer = document.createElement('div'); footer.className = 'dlg-footer';
+    // buttons per type
+    const mkBtn = (label, primary=false) => {
+      const b = document.createElement('button');
+      b.textContent = label;
+      if(primary) b.style.fontWeight = '600';
+      b.addEventListener('click', () => {
+        cleanup();
+        if(type === 'alert'){ resolve(true); }
+        else if(type === 'confirm'){ resolve(label.toLowerCase() === 'ok' || label.toLowerCase() === 'yes'); }
+        else if(type === 'prompt'){ resolve(label.toLowerCase() === 'ok' ? (inputEl.value) : null); }
+      });
+      return b;
+    };
+
+    if(type === 'alert'){
+      footer.appendChild(mkBtn('OK', true));
+    } else if(type === 'confirm'){
+      footer.appendChild(mkBtn('Cancel'));
+      footer.appendChild(mkBtn('OK', true));
+    } else if(type === 'prompt'){
+      footer.appendChild(mkBtn('Cancel'));
+      footer.appendChild(mkBtn('OK', true));
+    }
+
+    // assemble
+    modal.appendChild(titlebar);
+    modal.appendChild(bodyEl);
+    modal.appendChild(footer);
+    overlay.appendChild(modal);
+    document.body.appendChild(overlay);
+
+    // focus behavior
+    if(inputEl){
+      setTimeout(() => inputEl.focus(), 20);
+      inputEl.addEventListener('keydown', (e) => {
+        if(e.key === 'Enter'){ e.preventDefault(); footer.querySelector('button:last-child').click(); }
+        if(e.key === 'Escape'){ e.preventDefault(); footer.querySelector('button:first-child').click(); }
+      });
+    } else {
+      // allow Esc to close
+      window.setTimeout(()=> {
+        document.addEventListener('keydown', escClose);
+      }, 0);
+    }
+
+    // close btn handler
+    closeBtn.addEventListener('click', () => {
+      cleanup();
+      if(type === 'alert') resolve(true);
+      else if(type === 'confirm') resolve(false);
+      else if(type === 'prompt') resolve(null);
+    });
+
+    function escClose(e){
+      if(e.key === 'Escape'){
+        cleanup();
+        if(type === 'alert') resolve(true);
+        else if(type === 'confirm') resolve(false);
+        else if(type === 'prompt') resolve(null);
+      }
+    }
+
+    function cleanup(){
+      document.removeEventListener('keydown', escClose);
+      overlay.remove();
+    }
+  });
+}
+
+function osAlert(message, title='Alert'){
+  return createOSModal({title, body: String(message), type:'alert'});
+}
+function osConfirm(message, title='Confirm'){
+  return createOSModal({title, body: String(message), type:'confirm'});
+}
+function osPrompt(message, defaultValue='', title='Prompt'){
+  return createOSModal({title, body: String(message), type:'prompt', defaultValue: defaultValue});
+}
+
+/* ---------------------------
+   Explorer
+   --------------------------- */
+function createExplorerContent(initialPath = '/') {
+  let currentPath = initialPath || '/';
+  const wrapper = document.createElement('div');
+  wrapper.style.display = 'flex';
+  wrapper.style.flexDirection = 'column';
+  wrapper.style.height = '100%';
+
+  // Toolbar
+  const toolbar = document.createElement('div');
+  toolbar.style.display = 'flex';
+  toolbar.style.alignItems = 'center';
+  toolbar.style.gap = '6px';
+  toolbar.style.marginBottom = '6px';
+  const upBtn = document.createElement('button'); upBtn.textContent = 'Up';
+  const newFileBtn = document.createElement('button'); newFileBtn.textContent = 'New File';
+  const newFolderBtn = document.createElement('button'); newFolderBtn.textContent = 'New Folder';
+  const refreshBtn = document.createElement('button'); refreshBtn.textContent = 'Refresh';
+  const loadBtn = document.createElement('button'); loadBtn.textContent = 'Import';
+  toolbar.append(upBtn, newFileBtn, newFolderBtn, refreshBtn, loadBtn);
+
+  // Hidden input for loading
+  const fileInput = document.createElement('input');
+  fileInput.type = 'file';
+  fileInput.multiple = true;
+  fileInput.style.display = 'none';
+  wrapper.appendChild(fileInput);
+
+  // Breadcrumb
+  const breadcrumb = document.createElement('div');
+  breadcrumb.style.margin = '4px 0';
+  breadcrumb.style.fontSize = '12px';
+  breadcrumb.style.color = '#555';
+  breadcrumb.style.cursor = 'pointer';
+  breadcrumb.style.userSelect = 'none';
+
+  const list = document.createElement('div');
+  list.style.flex = '1';
+  list.style.overflow = 'auto';
+  list.style.borderTop = '1px solid #ddd';
+  list.style.paddingTop = '4px';
+  list.tabIndex = 0;
+
+  wrapper.append(toolbar, breadcrumb, list);
+
+  // --- Helper: Breadcrumb rendering ---
+  function updateBreadcrumb() {
+    const parts = currentPath.split('/').filter(Boolean);
+    breadcrumb.innerHTML = '';
+    const rootSeg = makeSeg('Root', '/');
+    breadcrumb.appendChild(rootSeg);
+
+    let pathAcc = '';
+    parts.forEach((part) => {
+      breadcrumb.append(' / ');
+      pathAcc += '/' + part;
+      breadcrumb.appendChild(makeSeg(part, pathAcc));
+    });
+
+    function makeSeg(label, targetPath) {
+      const seg = document.createElement('span');
+      seg.textContent = label;
+      seg.style.textDecoration = 'underline';
+      seg.style.cursor = 'pointer';
+      seg.addEventListener('click', () => {
+        currentPath = targetPath;
+        refresh();
+      });
+      seg.addEventListener('dragover', e => e.preventDefault());
+      seg.addEventListener('drop', async (e) => {
+  e.preventDefault();
+  const multi = e.dataTransfer.getData('application/x-multi-paths');
+  const plain = e.dataTransfer.getData('text/plain');
+  let paths = [];
+
+  if (multi) {
+    try { paths = JSON.parse(multi); } catch {}
+  } else if (plain) {
+    paths = [plain];
+  }
+
+  for (const p of paths) {
+    await moveItem(p, targetPath);
+  }
+  refresh();
+});
+
+      return seg;
+    }
+  }
+
+  // --- File list refresh ---
+  function refresh() {
+    list.innerHTML = '';
+    updateBreadcrumb();
+    const files = FS.readDir(currentPath) || [];
+    files.sort((a, b) => a.type.localeCompare(b.type) || a.name.localeCompare(b.name));
+
+    files.forEach((item) => {
+      const row = document.createElement('div');
+      row.className = 'file';
+      row.style.display = 'flex';
+      row.style.userSelect = 'none';
+      row.style.justifyContent = 'space-between';
+      row.style.alignItems = 'center';
+      row.tabIndex = 0;
+
+      const left = document.createElement('div');
+      left.textContent = (item.type === 'dir' ? '📁 ' : '📄 ') + item.name;
+      left.style.flex = '1';
+      row.appendChild(left);
+
+      const fullPath = (currentPath + '/' + item.name).replace(/\/+/g, '/');
+      row.dataset.path = fullPath;
+      row.dataset.type = item.type;
+
+      // --- Drag & drop moving (multi-item aware) ---
+row.draggable = true;
+row.addEventListener('dragstart', (ev) => {
+  ev.stopPropagation();
+
+  const selected = Array.from(list.querySelectorAll('.file.selected'));
+  const paths = selected.length > 1 && row.classList.contains('selected')
+    ? selected.map(f => f.dataset.path)
+    : [fullPath];
+
+  // store JSON for drop handlers
+  ev.dataTransfer.setData('application/x-multi-paths', JSON.stringify(paths));
+  ev.dataTransfer.effectAllowed = 'move';
+
+  // remove any previous ghost (safety)
+  const prev = document.getElementById('corneros-drag-ghost');
+  if (prev) prev.remove();
+
+  // build a compact ghost element for drag image (kept small)
+  try {
+    const ghost = document.createElement('div');
+    ghost.id = 'corneros-drag-ghost';
+    ghost.textContent = makePreviewTextForPaths(paths);
+
+    // compact styling to avoid very wide tooltip
+    Object.assign(ghost.style, {
+      padding: '6px 10px',
+      fontSize: '12px',
+      fontFamily: 'system-ui, Arial, sans-serif',
+      background: 'rgba(250,250,250,0.95)',
+      border: '1px solid #bbb',
+      borderRadius: '6px',
+      boxShadow: '0 4px 10px rgba(0,0,0,0.14)',
+      maxWidth: '220px',
+      whiteSpace: 'nowrap',
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      zIndex: 9999999,
+      position: 'fixed',
+      top: '-9999px', // keep offscreen so it doesn't flash
+      left: '-9999px'
+    });
+
+    document.body.appendChild(ghost);
+    // Use a small offset so the ghost doesn't cover the cursor
+    ev.dataTransfer.setDragImage(ghost, 12, 12);
+
+    // Ensure the ghost is removed when drag ends (some browsers fire dragend on the dragged element)
+    const onDragEnd = () => {
+      const g = document.getElementById('corneros-drag-ghost');
+      if (g) g.remove();
+      row.removeEventListener('dragend', onDragEnd);
+      // Also remove on window mouseup for extra safety
+      window.removeEventListener('mouseup', onDragEnd);
+    };
+    row.addEventListener('dragend', onDragEnd);
+    let ghostTimeout = setTimeout(removeGhost, 5000);
+
+	function removeGhost() {
+	  const g = document.getElementById('corneros-drag-ghost');
+	  if (g) g.remove();
+	  clearTimeout(ghostTimeout);
+	}
+
+	row.addEventListener('dragend', removeGhost);
+	window.addEventListener('mouseup', removeGhost, { once: true });
+
+
+    // extra safety: remove ghost after a timeout (in case dragend not fired)
+    setTimeout(() => {
+      const g = document.getElementById('corneros-drag-ghost');
+      if (g) g.remove();
+    }, 5000);
+  } catch (err) {
+    // silently ignore preview failures (drag still works)
+    // console.warn('drag preview failed', err);
+  }
+});
+      row.addEventListener('dragover', (ev) => {
+        ev.preventDefault();
+        if (item.type === 'dir') row.classList.add('drag-target');
+      });
+      row.addEventListener('dragleave', () => row.classList.remove('drag-target'));
+      row.addEventListener('drop', async (ev) => {
+  ev.preventDefault();
+  row.classList.remove('drag-target');
+  if (item.type !== 'dir') return;
+
+  const json = ev.dataTransfer.getData('application/x-multi-paths');
+  if (!json) return;
+  const paths = JSON.parse(json);
+
+  for (const p of paths) {
+    if (p === fullPath) continue;
+    await moveItem(p, fullPath);
+  }
+  refresh();
+});
+
+
+      // --- Single / multi click selection ---
+      row.addEventListener('click', (ev) => {
+        ev.stopPropagation();
+        const filesEls = Array.from(list.querySelectorAll('.file'));
+        const idx = filesEls.indexOf(row);
+
+        if (ev.ctrlKey) {
+          row.classList.toggle('selected');
+          list._lastClickedIndex = idx;
+        } else if (ev.shiftKey && list._lastClickedIndex >= 0) {
+          const start = Math.min(list._lastClickedIndex, idx);
+          const end = Math.max(list._lastClickedIndex, idx);
+          filesEls.forEach((f, i) => f.classList.toggle('selected', i >= start && i <= end));
+        } else {
+          filesEls.forEach(f => f.classList.remove('selected'));
+          row.classList.add('selected');
+          list._lastClickedIndex = idx;
+        }
+      });
+
+      // --- Double-click open ---
+      row.addEventListener('dblclick', (ev) => {
+        ev.stopPropagation();
+        if (item.type === 'file') {
+          const app = getAppForFile(item.name);
+          openFileInApp(app, fullPath);
+        } else {
+          currentPath = fullPath;
+          refresh();
+        }
+      });
+
+      // --- Context menu (multi-item aware) ---
+      row.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const selected = Array.from(list.querySelectorAll('.file.selected'));
+        const targets = selected.length > 1 && row.classList.contains('selected') ? selected : [row];
+        const items = [
+          { label: 'Open', action: () => row.dispatchEvent(new Event('dblclick')) },
+          { label: 'Rename', action: async () => {
+              if (targets.length > 1) { osAlert('Cannot rename multiple items.'); return; }
+              const old = targets[0].dataset.path;
+              const name = old.split('/').pop();
+              const newName = await osPrompt('Rename to', name);
+              if (!newName) return;
+              if (!FS.rename(old, newName)) await osAlert('Rename failed.');
+              refresh();
+            }},
+          { label: 'Delete', action: async () => {
+              const ok = await osConfirm(`Delete ${targets.length} item(s)?`);
+              if (!ok) return;
+              targets.forEach(t => FS.del(t.dataset.path, { recursive: true }));
+              refresh();
+            }},
+        ];
+        if (item.type === 'file')
+          items.splice(1, 0, { label: 'Download', action: () => FS.download(fullPath) });
+        showMenuFor(items, e.clientX, e.clientY);
+      });
+
+      list.appendChild(row);
+    });
+  }
+
+// --- Move helper (multi-move support) ---
+async function moveItem(srcFullPath, destDir) {
+  if (!srcFullPath || !destDir) return;
+  srcFullPath = srcFullPath.replace(/\/+/g, '/');
+  destDir = destDir.replace(/\/+/g, '/');
+
+  const name = srcFullPath.split('/').pop();
+  const contents = FS.readDir(destDir) || [];
+  const exists = contents.find(n => n.name === name);
+
+  if (exists) {
+    const overwrite = await osConfirm(`"${name}" already exists in ${destDir}. Overwrite?`);
+    if (!overwrite) return;
+    FS.move(srcFullPath, destDir, { allowOverwrite: true });
+  } else {
+    FS.move(srcFullPath, destDir, { allowOverwrite: false });
+  }
+}
+
+
+  // --- Click blank area clears selection ---
+  list.addEventListener('click', (e) => {
+    if (e.target === list) {
+      list.querySelectorAll('.file.selected').forEach(f => f.classList.remove('selected'));
+      list._lastClickedIndex = -1;
+    }
+  });
+
+  // --- Keyboard navigation ---
+  list.addEventListener('keydown', async (e) => {
+    const filesEls = Array.from(list.querySelectorAll('.file'));
+    const sel = filesEls.findIndex(f => f.classList.contains('selected'));
+    const move = (n) => {
+      filesEls.forEach(f => f.classList.remove('selected'));
+      if (filesEls[n]) {
+        filesEls[n].classList.add('selected');
+        filesEls[n].focus();
+        filesEls[n].scrollIntoView({ block: 'nearest' });
+        list._lastClickedIndex = n;
+      }
+    };
+    switch (e.key) {
+      case 'ArrowDown': e.preventDefault(); move(Math.min(filesEls.length - 1, sel + 1)); break;
+      case 'ArrowUp': e.preventDefault(); move(Math.max(0, sel - 1)); break;
+      case 'Enter':
+        e.preventDefault();
+        if (sel >= 0) filesEls[sel].dispatchEvent(new Event('dblclick'));
+        break;
+      case 'Delete':
+        e.preventDefault();
+        const targets = Array.from(list.querySelectorAll('.file.selected'));
+        if (!targets.length) return;
+        const ok = await osConfirm(`Delete ${targets.length} item(s)?`);
+        if (!ok) return;
+        targets.forEach(t => FS.del(t.dataset.path, { recursive: true }));
+        refresh();
+        break;
+      case 'Escape':
+        e.preventDefault();
+        filesEls.forEach(f => f.classList.remove('selected'));
+        list._lastClickedIndex = -1;
+        break;
+    }
+  });
+
+  // --- Toolbar actions ---
+  upBtn.addEventListener('click', () => {
+    if (currentPath === '/' || currentPath === '') return;
+    currentPath = '/' + currentPath.split('/').filter(Boolean).slice(0, -1).join('/');
+    if (currentPath === '') currentPath = '/';
+    refresh();
+  });
+  newFileBtn.addEventListener('click', async () => {
+    const name = await osPrompt('New file name', 'newfile.txt');
+    if (!name) return;
+    FS.writeFile((currentPath + '/' + name).replace(/\/+/g, '/'), '');
+    osNotify('Created ' + name);
+    refresh();
+  });
+  newFolderBtn.addEventListener('click', async () => {
+    const name = await osPrompt('New folder name', 'NewFolder');
+    if (!name) return;
+    FS.mkdir((currentPath + '/' + name).replace(/\/+/g, '/'));
+    osNotify('Created ' + name);
+    refresh();
+  });
+  refreshBtn.addEventListener('click', refresh);
+  loadBtn.addEventListener('click', () => fileInput.click());
+  fileInput.addEventListener('change', async () => {
+    const files = Array.from(fileInput.files || []);
+    for (const f of files) {
+      const text = await f.text();
+      FS.writeFile((currentPath + '/' + f.name).replace(/\/+/g, '/'), text);
+    }
+    osNotify('Imported ' + files.length + ' file(s)');
+    fileInput.value = '';
+    refresh();
+  });
+
+  refresh();
+  return wrapper;
+}
+
+function openNotepadForFile(path){
+  openNotepadCore(path);
+}
+
+function openNotepadBlank(){
+  openNotepadCore(null);
+}
+
+function openNotepadCore(path){
+  const content = path ? (FS.readFile(path) ?? '') : '';
+  const container = document.createElement('div'); container.style.display='flex'; container.style.flexDirection='column'; container.style.height='100%';
+
+  const menuBar = document.createElement('div'); menuBar.className='menu-bar'; 
+  const fileMenuBtn = document.createElement('div'); fileMenuBtn.textContent='File'; fileMenuBtn.style.position='relative'; fileMenuBtn.style.userSelect = 'none';
+  const editMenuBtn = document.createElement('div'); editMenuBtn.textContent='Edit'; editMenuBtn.style.position='relative'; editMenuBtn.style.userSelect = 'none';
+  menuBar.appendChild(fileMenuBtn); menuBar.appendChild(editMenuBtn);
+  container.appendChild(menuBar);
+
+  const fileDropdown = document.createElement('div'); fileDropdown.className='menu-dropdown'; fileDropdown.style.display='none';
+  ['Save','Save As','Rename','Close'].forEach(label=>{
+    const it = document.createElement('div'); it.className='menu-item'; it.textContent = label;
+    fileDropdown.appendChild(it);
+  });
+  fileMenuBtn.appendChild(fileDropdown);
+
+  const editDropdown = document.createElement('div'); editDropdown.className='menu-dropdown'; editDropdown.style.display='none';
+  ['Undo','Cut','Copy','Paste','Select All'].forEach(label=>{
+    const it = document.createElement('div'); it.className='menu-item'; it.textContent = label;
+    editDropdown.appendChild(it);
+  });
+  editMenuBtn.appendChild(editDropdown);
+
+  const ta = document.createElement('textarea'); ta.style.flex='1'; ta.style.width='100%'; ta.value = content; ta.dataset.path = path || ''; ta.dataset.dirty = 'false';
+  container.appendChild(ta);
+
+  // dropdown toggles
+  fileMenuBtn.addEventListener('click', e => { e.stopPropagation(); fileDropdown.style.display = fileDropdown.style.display === 'block' ? 'none' : 'block'; editDropdown.style.display='none'; });
+  editMenuBtn.addEventListener('click', e => { e.stopPropagation(); editDropdown.style.display = editDropdown.style.display === 'block' ? 'none' : 'block'; fileDropdown.style.display='none'; });
+  document.addEventListener('click', ()=> { fileDropdown.style.display='none'; editDropdown.style.display='none'; });
+
+  // file menu actions
+  // Save
+  fileDropdown.children[0].addEventListener('click', ()=> saveNotepad(ta));
+  // Save As
+  fileDropdown.children[1].addEventListener('click', async ()=> {
+    const name = await osPrompt('Save as filename', ta.dataset.path ? ta.dataset.path.split('/').pop() : 'note.txt');
+    if(!name) return;
+    const p = '/' + name;
+    FS.writeFile(p, ta.value);
+    ta.dataset.path = p; ta.dataset.dirty='false'; updateWindowTitleForEditor(ta);
+    await osNotify('Saved as ' + p);
+  });
+  // Rename
+  fileDropdown.children[2].addEventListener('click', async ()=> {
+    const old = ta.dataset.path;
+    if(!old){ await osAlert('File has no path (use Save As first)'); return; }
+    const name = await osPrompt('Rename to', old.split('/').pop());
+    if(!name) return;
+    const ok = FS.rename(old, name);
+    if(!ok) await osAlert('Rename failed (name exists?)');
+    else {
+      const dir = old.replace(/\/[^\/]+$/, '');
+	const newPath = `${dir}/${name}`.replace(/\/+/g, '/');
+      updateWindowTitleForEditor(ta);
+    }
+  });
+  // Close
+  fileDropdown.children[3].addEventListener('click', ()=> closeNotepadWindow(ta));
+
+  // edit menu behaviors
+  editDropdown.querySelectorAll('.menu-item').forEach(it=>{
+    it.addEventListener('click', ()=> {
+      const cmd = it.textContent;
+      if(cmd === 'Undo') document.execCommand('undo');
+      if(cmd === 'Cut') document.execCommand('cut');
+      if(cmd === 'Copy') document.execCommand('copy');
+      if(cmd === 'Paste') document.execCommand('paste');
+      if(cmd === 'Select All') ta.select();
+    });
+  });
+
+  // track changes
+  ta.addEventListener('input', ()=> { ta.dataset.dirty = 'true'; updateWindowTitleForEditor(ta); });
+
+  // Ctrl+S save
+  ta.addEventListener('keydown', e => {
+    if((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's'){ e.preventDefault(); saveNotepad(ta); }
+  });
+
+  // per-window context menu for notepad (provide Save / Save As / Rename / Close / Cut/Copy/Paste)
+  function notepadContextMenu(e, winMeta){
+    return [
+      {label:'Save', action: ()=> saveNotepad(ta)},
+      {label:'Save As', action: async ()=> {
+        const name = await osPrompt('Save as filename', ta.dataset.path ? ta.dataset.path.split('/').pop() : 'note.txt');
+        if(!name) return;
+        const p = '/' + name;
+        FS.writeFile(p, ta.value);
+        ta.dataset.path = p; ta.dataset.dirty='false'; updateWindowTitleForEditor(ta);
+        await osNotify('Saved as ' + p);
+      }},
+      {label:'Rename', action: async ()=> { const old = ta.dataset.path; if(!old){ await osAlert('Use Save As first'); return; } const name = await osPrompt('Rename to', old.split('/').pop()); if(!name) return; const ok = FS.rename(old, name); if(!ok) await osAlert('Rename failed'); else { const newPath = old.split('/').slice(0,-1).concat([name]).join('/'); ta.dataset.path = newPath; updateWindowTitleForEditor(ta); } }},
+      {label:'-', action:null, disabled:true},
+      {label:'Cut', action: ()=> document.execCommand('cut')},
+      {label:'Copy', action: ()=> document.execCommand('copy')},
+      {label:'Paste', action: ()=> document.execCommand('paste')},
+      {label:'Close', action: ()=> closeNotepadWindow(ta)}
+    ].map(it => it.label==='-' ? {label:'', action:()=>{}, disabled:true} : it);
+  }
+
+  const win = createWindow({ title: 'Notepad - ' + (ta.dataset.path ? ta.dataset.path.split('/').pop() : 'untitled'), width:540, height:380, content: container, contextMenu: notepadContextMenu });
+
+  function updateWindowTitleForEditor(textarea){ 
+    const name = textarea.dataset.path ? textarea.dataset.path.split('/').pop() : 'untitled';
+    const w = windows.get(win.id) || null;
+    if(w && w.titleEl) w.titleEl.textContent = 'Notepad - ' + name + (textarea.dataset.dirty==='true' ? ' *' : '');
+  }
+  updateWindowTitleForEditor(ta);
+
+  function saveNotepad(textarea){
+    (async () => {
+      const p = textarea.dataset.path;
+      if(!p){
+        const name = await osPrompt('Save as filename','note.txt');
+        if(!name) return;
+        const full = '/' + name;
+        FS.writeFile(full, textarea.value); textarea.dataset.path = full; textarea.dataset.dirty = 'false'; updateWindowTitleForEditor(textarea); await osAlert('Saved.');
+        return;
+      }
+      FS.writeFile(p, textarea.value);
+      textarea.dataset.dirty = 'false';
+      updateWindowTitleForEditor(textarea);
+      await osNotify('Saved.');
+    })();
+  }
+  function closeNotepadWindow(textarea){
+    (async () => {
+      if(textarea.dataset.dirty === 'true'){
+        const ok = await osConfirm('You have unsaved changes. Close anyway?');
+        if(!ok) return;
+      }
+      const winEl = textarea.closest('.window');
+      if(!winEl) return;
+      const meta = windows.get(winEl.dataset.id);
+      if(meta && meta.taskBtn) meta.taskBtn.remove();
+      winEl.remove();
+      windows.delete(winEl.dataset.id);
+    })();
+  }
+}
+
+/* ---------------------------
+   Terminal: per-window cwd, history, commands (unchanged behavior)
+   --------------------------- */
+function createTerminalContent(initialCwd='/'){
+  const wrapper = document.createElement('div'); wrapper.style.display='flex'; wrapper.style.flexDirection='column'; wrapper.style.height='100%';
+  const out = document.createElement('div'); out.className='terminal-out'; out.textContent = `user@miniOS:${initialCwd}$ Welcome to Mini Terminal\nType 'help'\n`;
+  const inp = document.createElement('input'); inp.className='terminal-in'; inp.placeholder='Enter command'; inp.autocomplete = 'off';
+  wrapper.appendChild(out); wrapper.appendChild(inp);
+
+  let cwd = initialCwd.replace(/\/+$/,'') || '/';
+  let history = [], histIndex = -1;
+
+  function promptStr(){ return `user@miniOS:${cwd}$ `; }
+  function writeLine(s=''){ out.textContent += s + '\n'; out.scrollTop = out.scrollHeight; }
+
+  function resolvePath(p){
+    if(!p) return cwd || '/';
+    if(p.startsWith('/')) return '/' + p.split('/').filter(Boolean).join('/');
+    // relative
+    const baseParts = cwd.split('/').filter(Boolean);
+    const parts = p.split('/').filter(Boolean);
+    for(const part of parts){
+      if(part === '.') continue;
+      if(part === '..'){ baseParts.pop(); continue; }
+      baseParts.push(part);
+    }
+    return '/' + baseParts.join('/');
+  }
+
+  function run(cmdLine){
+    if(!cmdLine) return;
+    writeLine(promptStr() + cmdLine);
+    history.push(cmdLine); histIndex = history.length;
+    const parts = cmdLine.split(' ').filter(Boolean);
+    const c = parts[0];
+    if(!c) return;
+    switch(c){
+      case 'help':
+        writeLine('help - show commands');
+        writeLine('ls [path] - list dir');
+        writeLine('cat <file> - show file');
+        writeLine('echo <text> - echo text');
+        writeLine('echo <text> > <file> - write file');
+        writeLine('mkdir <dir>');
+        writeLine('rm <path> - remove file or folder (recursively)');
+        writeLine('cd <dir>');
+        writeLine('pwd');
+		writeLine('nf <message> - sends a notification')
+		writeLine('al <message> - shows a message on screen')
+        writeLine('clear');
+        break;
+      case 'ls': {
+        const p = resolvePath(parts[1] || '/');
+        const arr = FS.readDir(p);
+        if(!arr) writeLine('ls: not a directory');
+        else writeLine(arr.map(i => i.name + (i.type==='dir'?'/':'' ) ).join('\n'));
+        break;
+      }
+      case 'cat': {
+        if(!parts[1]) { writeLine('cat: missing file'); break; }
+        const p = resolvePath(parts[1]);
+        const txt = FS.readFile(p);
+        if(txt === null) writeLine('cat: not found');
+        else writeLine(txt);
+        break;
+      }
+      case 'echo': {
+        // support "echo text > file"
+        const gtIndex = parts.indexOf('>');
+        if(gtIndex !== -1 && parts.length > gtIndex + 1){
+          const text = parts.slice(1, gtIndex).join(' ');
+          const target = resolvePath(parts[gtIndex + 1]);
+          FS.writeFile(target, text + '\n');
+          writeLine('written to ' + target);
+        } else {
+          writeLine(parts.slice(1).join(' '));
+        }
+        break;
+      }
+      case 'mkdir': {
+        if(!parts[1]) { writeLine('mkdir: missing dir'); break; }
+        const p = resolvePath(parts[1]);
+        FS.mkdir(p);
+        writeLine('mkdir: ' + p);
+        break;
+      }
+      case 'rm': {
+        if(!parts[1]) { writeLine('rm: missing path'); break; }
+        const p = resolvePath(parts[1]);
+        const ok = FS.del(p, {recursive:true});
+        writeLine(ok ? 'removed ' + p : 'rm: failed');
+        break;
+      }
+	  case 'nf': {
+		osNotify(parts.slice(1).join(' '));
+		break;
+	  }
+	  case 'al': {
+		osAlert(parts.slice(1).join(' '));
+		break;
+	  }
+      case 'cd': {
+        const target = parts[1] ? resolvePath(parts[1]) : '/';
+        if(!FS.isDir(target)) { writeLine('cd: not a directory'); }
+        else { cwd = target; writeLine(''); }
+        break;
+      }
+      case 'pwd': writeLine(cwd); break;
+      case 'clear': out.textContent = ''; break;
+      default:
+        writeLine('Unknown command: ' + c);
+    }
+  }
+
+  inp.addEventListener('keydown', e=>{
+    if(e.key === 'Enter'){
+      run(inp.value.trim());
+      inp.value = '';
+    } else if(e.key === 'ArrowUp'){
+      if(history.length === 0) return;
+      histIndex = Math.max(0, histIndex - 1);
+      inp.value = history[histIndex] || '';
+    } else if(e.key === 'ArrowDown'){
+      histIndex = Math.min(history.length, histIndex + 1);
+      inp.value = history[histIndex] || '';
+    } else if((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'l'){
+      // clear
+      out.textContent = ''; e.preventDefault();
+    }
+  });
+
+  return wrapper;
+}
+
+function rs() {
+  // 1. Remove stored settings
+  localStorage.removeItem('os-settings');
+
+  // 2. Replace settings object’s properties with defaults
+  const defaults = { clock24: true, bg: '#000000' };
+  Object.keys(settings).forEach(k => delete settings[k]); // clear old keys
+  Object.assign(settings, defaults);
+
+  // 3. Apply changes
+  desktop.style.background = settings.bg;
+
+  // 4. Save again
+  saveSettings();
+}
+
+// Settings app
+function createSettingsContent(){
+  const d = document.createElement('div');
+  d.style.display = 'flex'; d.style.flexDirection = 'column';
+  d.innerHTML = '<h4 style="user-select:none">Settings</h4>';
+  const bgLabel = document.createElement('label'); bgLabel.textContent = ' Desktop background: '; bgLabel.style = "user-select:none";
+  const bgInput = document.createElement('input'); bgInput.type='color'; bgInput.value = settings.bg; bgInput.style = "user-select:none";
+  bgLabel.appendChild(bgInput);
+  d.appendChild(bgLabel);
+
+  const clkLabel = document.createElement('label'); clkLabel.style.marginTop='8px'; clkLabel.textContent = ' 24-hour clock: '; clkLabel.style = "user-select:none";
+  const clkInput = document.createElement('input'); clkInput.type='checkbox'; clkInput.checked = settings.clock24;
+  clkLabel.appendChild(clkInput);
+  d.appendChild(clkLabel);
+
+  const diva = document.createElement('div'); diva.style="height:5px";
+  d.appendChild(diva);
+
+  const resetBtn = document.createElement('button'); resetBtn.textContent = 'Reset OS'; resetBtn.style.marginTop='12px'; resetBtn.style = "user-select:none";
+  d.appendChild(resetBtn);
+  
+  const divt = document.createElement('div'); divt.style="height:5px";
+  d.appendChild(divt);
+  
+  const resetsetBtn = document.createElement('button'); resetsetBtn.textContent = 'Reset Settings'; resetsetBtn.style.marginTop='12px'; resetsetBtn.style = "user-select:none";
+  d.appendChild(resetsetBtn);
+
+  bgInput.addEventListener('input', ()=>{ settings.bg = bgInput.value; saveSettings(); });
+  clkInput.addEventListener('change', ()=> { settings.clock24 = clkInput.checked; saveSettings(); updateClock(); });
+  resetBtn.addEventListener('click', async ()=> { if(await osConfirm('Reset OS? This cannot be undone.')){ rs();FS.reset(); await osAlert('Filesystem reset. Reloading.'); /* location.reload() handled by FS.reset */ }});
+  resetsetBtn.addEventListener('click', async ()=> { if(await osConfirm('Reset settings? This cannot be undone.')){ rs(); await osAlert('Settings reset.');}});
+  return d;
+}
+
+// HTML Editor App
+function openHTMLeditor(initialPath = null) {
+  const htmlContent = initialPath ? (FS.readFile(initialPath) ?? '') : '';
+
+  // Layout
+  const wrap = document.createElement('div');
+  wrap.style.display = 'flex';
+  wrap.style.flexDirection = 'column';
+  wrap.style.height = '100%';
+
+  // Menu bar
+  const menuBar = document.createElement('div');
+  menuBar.className = 'menu-bar';
+  const fileMenuBtn = document.createElement('div');
+  fileMenuBtn.textContent = 'File';
+  fileMenuBtn.style.position = 'relative';
+  fileMenuBtn.style.userSelect = 'none';
+  menuBar.appendChild(fileMenuBtn);
+  wrap.appendChild(menuBar);
+
+  const fileDropdown = document.createElement('div');
+  fileDropdown.className = 'menu-dropdown';
+  ['Save', 'Save As', 'Close'].forEach(l => {
+    const it = document.createElement('div');
+    it.className = 'menu-item';
+    it.textContent = l;
+    fileDropdown.appendChild(it);
+  });
+  fileMenuBtn.appendChild(fileDropdown);
+
+  // ---- Editor + Preview ----
+  const areaWrap = document.createElement('div');
+  areaWrap.style.display = 'flex';
+  areaWrap.style.flex = '1';
+  areaWrap.style.gap = '4px';
+  areaWrap.style.overflow = 'hidden';
+
+  const ta = document.createElement('textarea');
+  ta.value = htmlContent;
+  ta.dataset.path = initialPath || '';
+  ta.style.flex = '1';
+  ta.style.width = '50%';
+  ta.style.height = '100%';
+  ta.style.fontFamily = 'monospace';
+  ta.style.resize = 'none';
+  ta.spellcheck = false;
+
+  const preview = document.createElement('iframe');
+  preview.style.flex = '1';
+  preview.style.border = '1px solid #ccc';
+  preview.style.background = '#fff';
+
+  areaWrap.appendChild(ta);
+  areaWrap.appendChild(preview);
+  wrap.appendChild(areaWrap);
+
+  // Live preview
+  function updatePreview() {
+    preview.srcdoc = ta.value;
+  }
+  ta.addEventListener('input', updatePreview);
+  updatePreview();
+
+  // Dropdown toggle
+  fileMenuBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    fileDropdown.style.display = fileDropdown.style.display === 'block' ? 'none' : 'block';
+  });
+  document.addEventListener('click', () => (fileDropdown.style.display = 'none'));
+
+  // File menu actions
+  fileDropdown.children[0].addEventListener('click', () => saveHTML());
+  fileDropdown.children[1].addEventListener('click', () => saveAsHTML());
+  fileDropdown.children[2].addEventListener('click', () => closeWindow());
+
+  const win = createWindow({
+    title: 'HTML Editor' + (initialPath ? ' - ' + initialPath.split('/').pop() : ''),
+    width: 800,
+    height: 500,
+    content: wrap,
+  });
+
+  // ---- Functions ----
+  function saveHTML() {
+    (async () => {
+      let path = ta.dataset.path;
+      if (!path) {
+        const name = await osPrompt('Save as filename', 'page.html');
+        if (!name) return;
+        path = '/' + name;
+      }
+      FS.writeFile(path, ta.value);
+      ta.dataset.path = path;
+      await osNotify('Saved to ' + path);
+      updateTitle();
+    })();
+  }
+
+  function saveAsHTML() {
+    (async () => {
+      const name = await osPrompt('Save as filename', 'page.html');
+      if (!name) return;
+      const path = '/' + name;
+      FS.writeFile(path, ta.value);
+      ta.dataset.path = path;
+      await osNotify('Saved as ' + path);
+      updateTitle();
+    })();
+  }
+
+  function closeWindow() {
+    const winEl = wrap.closest('.window');
+    if (!winEl) return;
+    windows.get(winEl.dataset.id)?.taskBtn?.remove();
+    winEl.remove();
+    windows.delete(winEl.dataset.id);
+  }
+
+  function updateTitle() {
+    const name = ta.dataset.path ? ta.dataset.path.split('/').pop() : 'untitled.html';
+    const meta = windows.get(win.id);
+    if (meta) meta.titleEl.textContent = 'HTML Editor - ' + name;
+  }
+}
+
+/* ---------------------------
+   App Creator
+   --------------------------- */
+function addAppToDesktop(name, emoji){
+  // ensure Desktop Apps folder exists
+  FS.mkdir('/Apps');
+  const iconsRoot = document.getElementById('icons');
+  // avoid duplicates
+  const existing = Array.from(iconsRoot.querySelectorAll('.app-icon')).find(el => el.dataset.app === 'userapp:' + '/Apps/' + name + '.html');
+  if(existing) return;
+  const el = document.createElement('div'); el.className='app-icon'; el.dataset.app = 'userapp:' + '/Apps/' + name + '.html';
+  const ic = document.createElement('div'); ic.textContent = emoji || '🔹';
+  const lbl = document.createElement('div'); lbl.className='icon-label'; lbl.textContent = name;
+  el.appendChild(ic); el.appendChild(lbl);
+  iconsRoot.appendChild(el);
+  setupAppIcon(el);
+}
+
+function loadAppsToDesktop(){
+  // read /Apps and create icons
+  const files = FS.readDir('/Apps') || [];
+  files.filter(f=> f.type==='file' && f.name.toLowerCase().endsWith('.html')).forEach(f => {
+    const name = f.name.replace(/\.html$/i,'');
+    // try to read a small manifest comment from file for emoji (optional)
+    const raw = FS.readFile('/Apps/' + f.name) || '';
+    let emoji = null;
+    const m = raw.match(/<!--\s*APP_ICON:\s*(.*?)\s*-->/);
+    if(m) emoji = m[1];
+    addAppToDesktop(name, emoji || '🔸');
+  });
+}
+
+function openUserApp(path) {
+  const html = FS.readFile(path) || '<h3>App not found</h3>';
+  const wrap = document.createElement('div');
+  wrap.style.display = 'flex';
+  wrap.style.flexDirection = 'column';
+  wrap.style.height = '100%';
+  const iframe = document.createElement('iframe');
+  iframe.style.border = '0';
+  iframe.style.flex = '1';
+  iframe.srcdoc = html;
+  wrap.appendChild(iframe);
+  
+  const name = path.split('/').pop().replace('.html', '');
+  createWindow({
+    title: name,
+    width: 600,
+    height: 420,
+    content: wrap
+  });
+}
+
+
+/* App Creator UI */
+function createAppCreatorContent(){
+  const wrap = document.createElement('div'); wrap.style.display='flex'; wrap.style.flexDirection='column'; wrap.style.height='100%';
+  const top = document.createElement('div'); top.style.display='flex'; top.style.gap='8px'; top.style.alignItems='center';
+  const nameInp = document.createElement('input'); nameInp.placeholder='App name (no extension)'; nameInp.style.flex='1';
+  const emojiInp = document.createElement('input'); emojiInp.placeholder='Icon (emoji)'; emojiInp.style.width='60px';
+  top.appendChild(nameInp); top.appendChild(emojiInp);
+  wrap.appendChild(top);
+
+  const ta = document.createElement('textarea'); ta.style.flex='1'; ta.style.width='100%'; ta.placeholder = '<!-- Optional: <!-- APP_ICON: 🔔 --> -->\n<!doctype html>\n<html><body><h1>Your app</h1></body></html>';
+  ta.style.fontFamily='monospace';
+  wrap.appendChild(ta);
+
+  const btns = document.createElement('div'); btns.style.display='flex'; btns.style.gap='8px'; btns.style.marginTop='8px';
+  const saveBtn = document.createElement('button'); saveBtn.textContent='Save & Install';
+  const previewBtn = document.createElement('button'); previewBtn.textContent='Preview';
+  const openInEditorBtn = document.createElement('button'); openInEditorBtn.textContent='Open in HTML Editor';
+  btns.appendChild(saveBtn); btns.appendChild(previewBtn); btns.appendChild(openInEditorBtn);
+  wrap.appendChild(btns);
+
+  previewBtn.addEventListener('click', ()=>{
+    const tmp = ta.value || '<p>(empty)</p>';
+    const winWrap = document.createElement('div'); winWrap.style.display='flex'; winWrap.style.flexDirection='column'; winWrap.style.height='100%';
+    const iframe = document.createElement('iframe'); iframe.style.border='0'; iframe.style.flex='1'; iframe.srcdoc = tmp;
+    winWrap.appendChild(iframe);
+    createWindow({ title: 'Preview', width:640, height:420, content: winWrap });
+  });
+
+  saveBtn.addEventListener('click', async ()=>{
+    const name = (nameInp.value || '').trim();
+    if(!name){ await osAlert('Please provide an app name'); return; }
+    const filename = name + '.html';
+    const path = '/Apps/' + filename;
+    const content = ta.value;
+    // prepend manifest comment with icon for later
+    let final = content;
+    if(emojiInp.value && emojiInp.value.trim()){
+      final = '<!-- APP_ICON: ' + emojiInp.value.trim() + ' -->\n' + final;
+    }
+    FS.writeFile(path, final);
+    addAppToDesktop(name, emojiInp.value || '🔸');
+    await osNotify('App saved to ' + path);
+  });
+
+  openInEditorBtn.addEventListener('click', ()=>{
+    const tmpName = (nameInp.value || '').trim() || 'untitled';
+    openHTMLeditor(null);
+    // after opening editor, try to find the editor's textarea and populate it
+    // we give it a brief timeout to ensure window is created
+    setTimeout(()=>{
+      const winEls = Array.from(document.querySelectorAll('.window')).reverse();
+      for(const winEl of winEls){
+        if(winEl.querySelector('textarea')){
+          const taEl = winEl.querySelector('textarea');
+          taEl.value = ta.value;
+          // set suggested path so Save As works nicely
+          taEl.dataset.path = '';
+          break;
+        }
+      }
+    }, 120);
+  });
+
+  return wrap;
+}
+
+/* ---------------------------
+   App launcher (uses unified notepad)
+   --------------------------- */
+function openApp(name) {
+  // handle user apps
+  if (name.startsWith('userapp:')) {
+    const path = name.replace('userapp:', '');
+    openUserApp(path);
+    return;
+  }
+  // existing app handlers
+  if(name === 'about') return createWindow({title:'About', width:380, height:360, content: '<div style="background-color:#E8E8E8; margin:0;display:table;table-layout:fixed; width:100%;border-spacing:0 0"> <img draggable="false" style="user-select:none;float:left;width:42px;height:42px;" src="data:image/png;base64,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"> <h2 style="user-select:none">Corner OS 1</h2> <h3 style="user-select:none">Version 1.6:</h3> </div> <ul> <li style="user-select:none">Reworked many areas of OS style: </li> <ul> <li style="user-select:none">App icons (Desktop/ start menu)</li> <li style="user-select:none">Window controls</li> <li style="user-select:none">Right click menu</li> <li style="user-select:none">Taskbar buttons</li> <li style="user-select:none">Start menu button</li> <li style="user-select:none">Changed button style</li> <li style="user-select:none">Many other cursor changes</li> </ul> <li style="user-select:none">Fixed taskbar collision</li> </ul> <h4 style="user-select:none">Also, the version system is changing.</h4>'});
+  if(name === 'explorer') return createWindow({title:'Explorer', width:520, height:360, content: createExplorerContent()});
+  if(name === 'notepad') return openNotepadBlank();
+  if(name === 'htmleditor') return openHTMLeditor();
+  if(name === 'terminal') return createWindow({title:'Terminal', width:520, height:300, content: createTerminalContent('/')});
+  if(name === 'settings') return createWindow({title:'Settings', width:420, height:260, content: createSettingsContent()});
+  if(name === 'appcreator') return createWindow({title:'App Creator', width:700, height:520, content: createAppCreatorContent()});
+}
+
+
+function openFileInApp(app, path) {
+  if(app === 'notepad'){
+    openNotepadForFile(path);
+    return;
+  }
+  if(app === 'htmleditor'){
+    openHTMLeditor(path);
+    return;
+  }
+  // default handler
+  // allow running user apps if path is in /Apps
+  if(path && path.startsWith('/Apps/')){
+    openUserApp(path);
+    return;
+  }
+  openNotepadForFile(path);
+}
+
+/* ---------------------------
+   Global keyboard shortcuts
+   --------------------------- */
+document.addEventListener('keydown', e=>{
+  if((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's'){
+    const active = document.activeElement;
+    if(active && active.tagName === 'TEXTAREA'){
+      const ta = active;
+      // attempt save if textarea has dataset.path or prompt for save as
+      if(ta.dataset && ta.dataset.path){
+        FS.writeFile(ta.dataset.path, ta.value);
+        ta.dataset.dirty = 'false';
+        const win = ta.closest('.window');
+        if(win) { const w = windows.get(win.dataset.id); if(w) w.titleEl.textContent = 'Notepad - ' + ta.dataset.path.split('/').pop(); }
+        (async ()=>{ await osNotify('Saved.'); })();
+        e.preventDefault();
+      } else {
+        (async ()=> {
+          const name = await osPrompt('Save as filename','note.txt');
+          if(name){
+            FS.writeFile('/'+name, ta.value);
+            ta.dataset.path = '/'+name;
+            ta.dataset.dirty = 'false';
+            const win = ta.closest('.window');
+            if(win) { const w = windows.get(win.dataset.id); if(w) w.titleEl.textContent = 'Notepad - ' + name; }
+            await osNotify('Saved.');
+            e.preventDefault();
+          }
+        })();
+      }
+    }
+  }
+});
+/* ---------------------------
+   boot: load user apps into desktop
+   --------------------------- */
+setTimeout(()=>{
+  try{ loadAppsToDesktop(); }catch(e){ console.warn(e); }
+}, 50);
+
+/* ---------------------------
+   handle desktop app icons that reference user apps (double-click to run)
+   --------------------------- */
+// if user-created icons are added dynamically they already get setupAppIcon called by addAppToDesktop
+
+</script>
+</body>
+</html>
